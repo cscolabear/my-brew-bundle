@@ -10,22 +10,28 @@ https://github.com/Homebrew/homebrew-bundle<br>
 
 
 ## 執行 / usage
-1. clone this repo
+##### 1. clone this repo
 ```
 git clone https://github.com/cscolabear/my-brew-bundle.git
 ````
+##### 2. modify Brewfile file, what u need
 
-2. in command line...
+##### 3. in command line, 
 ```
 bash brew_install.sh
 ```
 
-3. input in your computer's password
+##### 4. input in your computer's password
 
+##### 5. wait a minute....
+![bundle start](https://user-images.githubusercontent.com/4863629/27951414-73a66f16-6337-11e7-92b0-05f1a241e250.png)
+<br>
+.<br>
+.<br>
+.<br>
+![bundle done](https://user-images.githubusercontent.com/4863629/27951326-182e03a6-6337-11e7-8d1c-3d4dca3c25b0.png)
 
-4. wait a minute....
-
-5. fine~
+##### 6. fine~
 
 
 ## 支援哪些 APP / Cask Search
