@@ -14,7 +14,9 @@ https://github.com/Homebrew/homebrew-bundle<br>
 ```
 git clone https://github.com/cscolabear/my-brew-bundle.git
 ````
-##### 2. modify Brewfile file, what u need
+##### 2. modify Brewfile file, remove or add what u need
+![modify Brewfile](https://user-images.githubusercontent.com/4863629/27952013-65a93d92-6339-11e7-9717-6f472c92f29b.png)
+
 
 ##### 3. in command line, 
 ```
