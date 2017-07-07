@@ -29,6 +29,7 @@ cask 'kitematic'
 
 cask 'slack'
 cask 'telegram-desktop'
+cask 'goofy'
 
 cask 'tunnelbear'
 cask 'licecap'
