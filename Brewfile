@@ -1,4 +1,6 @@
+# brew install
 brew 'bash-completion'
+brew 'mas'
 
 # PHP 7
 tap 'homebrew/dupes'
@@ -12,6 +14,8 @@ brew 'php70'
 cask_args appdir: '/Applications'
 tap 'caskroom/cask'
 tap 'caskroom/versions'
+
+
 
 # Casks
 cask 'google-chrome'
@@ -40,3 +44,10 @@ cask 'evernote'
 
 cask 'spotify'
 cask 'spotifree'
+
+
+
+# mas, from apple store
+mas "LINE", id: 539883307
+mas "Magnet", id: 441258766
+mas "Simplenote", id: 692867256
