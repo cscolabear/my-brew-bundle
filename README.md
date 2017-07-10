@@ -9,19 +9,28 @@ https://caskroom.github.io/<br>
 https://github.com/Homebrew/homebrew-bundle<br>
 
 
+
 ## 執行 / usage
 ##### 1. clone this repo
+e.g. /Users/cola/my-brew-bundle
+
 ```
 git clone https://github.com/cscolabear/my-brew-bundle.git
 ````
+
+
 ##### 2. modify Brewfile file, remove or add what u need
+(/Users/cola/my-brew-bundle/Brewfile)<br>
 ![modify Brewfile](https://user-images.githubusercontent.com/4863629/27952013-65a93d92-6339-11e7-9717-6f472c92f29b.png)
 
 
-##### 3. in command line, 
+##### 3. run brew_install.sh
+e.g. 
 ```
+cd /Users/cola/my-brew-bundle
 bash brew_install.sh
 ```
+
 
 ##### 4. input in your computer's password
 

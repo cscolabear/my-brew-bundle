@@ -51,3 +51,4 @@ cask 'spotifree'
 mas "LINE", id: 539883307
 mas "Magnet", id: 441258766
 mas "Simplenote", id: 692867256
+mas "Monosnap", id: 540348655
