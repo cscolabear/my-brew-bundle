@@ -18,6 +18,8 @@ tap 'caskroom/versions'
 
 
 # Casks
+cask 'cakebrew'
+
 cask 'google-chrome'
 cask 'google-chrome-canary'
 cask 'firefox'
