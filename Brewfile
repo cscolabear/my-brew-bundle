@@ -31,6 +31,7 @@ cask 'sequel-pro'
 cask 'sourcetree'
 cask 'sublime-text'
 cask 'postman'
+cask 'zeplin'
 
 cask 'docker'
 cask 'kitematic'
