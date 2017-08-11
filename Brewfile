@@ -41,6 +41,7 @@ cask 'telegram-desktop'
 cask 'goofy'
 
 cask 'tunnelbear'
+cask 'purevpn'
 cask 'licecap'
 cask 'appcleaner'
 cask 'the-unarchiver'
@@ -49,6 +50,7 @@ cask 'evernote'
 
 cask 'spotify'
 cask 'spotifree'
+cask 'virtualbox'
 
 
 
@@ -57,3 +59,4 @@ mas "LINE", id: 539883307
 mas "Magnet", id: 441258766
 mas "Simplenote", id: 692867256
 mas "Monosnap", id: 540348655
+mas "MicrosoftRemoteDesktop", id: 715768417
