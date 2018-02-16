@@ -1,10 +1,9 @@
 # brew install
 brew 'bash-completion'
+brew 'git'
 brew 'mas'
 
 # PHP 7
-tap 'homebrew/dupes'
-tap 'homebrew/versions'
 tap 'homebrew/homebrew-php'
 brew 'php70'
 
@@ -30,6 +29,7 @@ cask 'sourcetree'
 cask 'sublime-text'
 cask 'postman'
 cask 'zeplin'
+cask 'balsamiq-mockups'
 
 cask 'docker'
 cask 'kitematic'
@@ -38,17 +38,18 @@ cask 'slack'
 cask 'telegram-desktop'
 cask 'goofy'
 
-cask 'tunnelbear'
-cask 'purevpn'
-cask 'licecap'
+cask 'safeincloud-password-manager'
+cask 'expressvpn'
 cask 'appcleaner'
 cask 'the-unarchiver'
 cask 'keka'
 cask 'evernote'
+cask 'cloudapp'
 
+cask 'vox'
+cask 'vox-preferences-pane'
 cask 'spotify'
 cask 'spotifree'
-cask 'virtualbox'
 
 
 
@@ -56,5 +57,4 @@ cask 'virtualbox'
 mas "LINE", id: 539883307
 mas "Magnet", id: 441258766
 mas "Simplenote", id: 692867256
-mas "Monosnap", id: 540348655
 mas "MicrosoftRemoteDesktop", id: 715768417
