@@ -22,11 +22,11 @@ fi;
 echo
 echo "${green}* brew update....${reset}"
 echo
-# brew update
+brew update
 
 # Install everything in Brewfile
-# brew bundle
-# brew cleanup
+brew bundle
+brew cleanup
 
 
 
@@ -67,15 +67,15 @@ echo
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 
 # Navicat connect list
-ln -s ~/Documents/Navicat/preference.plist ~/Library/Application\ Support/PremiumSoft\ CyberTech
+#ln -s ~/Documents/Navicat/preference.plist ~/Library/Application\ Support/PremiumSoft\ CyberTech
 
 # Sequel Pro
-ln -s ~/Documents/Sequel\ Pro/Favorites.plist ~/Library/Application\ Support/Sequel\ Pro/Data
-ln -s ~/Documents/Sequel\ Pro/com.sequelpro.SequelPro.plist ~/Library/Preferences
+#ln -s ~/Documents/Sequel\ Pro/Favorites.plist ~/Library/Application\ Support/Sequel\ Pro/Data
+#ln -s ~/Documents/Sequel\ Pro/com.sequelpro.SequelPro.plist ~/Library/Preferences
 
 # Transmit
-ln -s ~/Documents/Transmit/Favorites ~/Library/Application\ Support/Transmit
-ln -s ~/Documents/Transmit/Metadata ~/Library/Application\ Support/Transmit
+#ln -s ~/Documents/Transmit/Favorites ~/Library/Application\ Support/Transmit
+#ln -s ~/Documents/Transmit/Metadata ~/Library/Application\ Support/Transmit
 
 
 
