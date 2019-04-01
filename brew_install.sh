@@ -31,19 +31,38 @@ brew cleanup
 
 
 #
-# cp bash_profile
+# ln bash_profile
 #
 echo
 echo "${green}* check bash_profile...${reset}"
 echo
-file="/Users/$USER/.bash_profile"
+target_file="/Users/$USER/.bash_profile"
 source_file="/Users/$USER/Dropbox/Sync/shell\ script/.bash_profile"
 
 echo " - is exist : $file"
 if [ -e "$file" ]; then
     echo "${green}files found.${reset}"
 else
-	ln -s /Users/$USER/Dropbox/Sync/shell\ script/.bash_profile /Users/$USER/.bash_profile
+	ln -s "${source_file}" "${target_file}"
+fi
+echo
+
+
+
+#
+# ln motd
+#
+echo
+echo "${green}* check motd...${reset}"
+echo
+target_file="/etc/motd"
+source_file="/Users/$USER/Dropbox/Sync/iTrem/motd"
+
+echo " - is exist : $file"
+if [ -e "$file" ]; then
+    echo "${green}files found.${reset}"
+else
+    ln -s "${source_file}" "${target_file}"
 fi
 echo
 
