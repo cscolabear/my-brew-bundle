@@ -37,20 +37,13 @@ echo
 echo "${green}* check bash_profile...${reset}"
 echo
 file="/Users/$USER/.bash_profile"
-source_file="bash_profile"
+source_file="/Users/$USER/Dropbox/Sync/shell\ script/.bash_profile"
 
 echo " - is exist : $file"
 if [ -e "$file" ]; then
     echo "${green}files found.${reset}"
 else
-    echo "files not found! ready to copy...."
-
-	if [ -e "$source_file" ]; then
-        cp $source_file $file
-		echo "${green}copy done.${reset}"
-	else
-		echo "${red}missing '$source_file', fail to copy...${resest}"
-	fi
+	ln -s /Users/$USER/Dropbox/Sync/shell\ script/.bash_profile /Users/$USER/.bash_profile
 fi
 echo
 
