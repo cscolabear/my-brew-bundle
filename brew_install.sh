@@ -25,7 +25,7 @@ echo
 brew update
 
 # Install everything in Brewfile
-brew bundle
+# brew bundle
 brew cleanup
 
 
@@ -62,7 +62,7 @@ echo " - is exist : $file"
 if [ -e "$file" ]; then
     echo "${green}files found.${reset}"
 else
-    ln -s "${source_file}" "${target_file}"
+    sudo ln -s "${source_file}" "${target_file}"
 fi
 echo
 
@@ -76,7 +76,7 @@ echo "${green}* create symlink....${reset}"
 echo
 
 # symlink to subl
-ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+# ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 
 # Navicat connect list
 #ln -s ~/Documents/Navicat/preference.plist ~/Library/Application\ Support/PremiumSoft\ CyberTech
@@ -93,12 +93,12 @@ ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/sub
 
 #
 # Allow Apps from Anywhere in macOS
-#
+spctl --status
 echo
 echo "${green}* spctl --master-disable : ${reset}"
 echo
 sudo spctl --master-disable
-spctl --status
+
 
 
 
