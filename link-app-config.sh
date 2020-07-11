@@ -37,10 +37,9 @@ fi
 # ^
 
 project="ml .env"
-source_file="/Users/$USER/Dropbox/Sync/SourceTree/browser.plist"
-target_file="/Users/$USER/Library/ApplicationSupport/SourceTree/browser.plist"
-# for SourceTree, used `ln` not `ln -s`
-ln "${source_file}" "${target_file}"
+source_file="/Users/$USER/Dropbox/Sync/SourceTree"
+target_file="/Users/$USER/Library/ApplicationSupport/SourceTree"
+ln -s "${source_file}" "${target_file}"
 
 
 echo
