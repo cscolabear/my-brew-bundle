@@ -37,7 +37,7 @@ echo
 echo "${green}* check bash_profile...${reset}"
 echo
 target_file="/Users/$USER/.bash_profile"
-source_file="/Users/$USER/Dropbox/Sync/shell\ script/.bash_profile"
+source_file="/Users/$USER/Dropbox/Sync/shell_script/.bash_profile"
 
 echo " - is exist : $file"
 if [ -e "$file" ]; then
