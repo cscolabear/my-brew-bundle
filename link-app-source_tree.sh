@@ -14,7 +14,8 @@ echo "${green}---------------------------${reset}"
 echo
 
 source_file="/Users/$USER/Dropbox/Sync/SourceTree"
-target_file="/Users/$USER/Library/ApplicationSupport/SourceTree"
+target_file="/Users/$USER/Library/ApplicationSupport"
+echo "ln -s ${source_file} ${target_file}"
 ln -s "${source_file}" "${target_file}"
 
 
