@@ -25,7 +25,7 @@ echo
 brew update
 
 # Install everything in Brewfile
-# brew bundle
+brew bundle
 brew cleanup
 
 
