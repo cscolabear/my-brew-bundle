@@ -1,30 +1,29 @@
 #!/bin/bash
 
-#
-# Install all the things with Homebrew, Casks and a Brewfile
-#
 red=`tput setaf 1`
 green=`tput setaf 2`
 reset=`tput sgr0`
 
 echo
+echo
 echo "${green}---------------------------${reset}"
-echo "${green}--- link-hosts ---${reset}"
+echo "${green}---      link-hosts     ---${reset}"
+echo "${green}--- 💡 use sudo for this script ---${reset}"
 echo "${green}---------------------------${reset}"
 echo
 
+source ./.env
 
-
-#source_file="/Users/$USER/Dropbox/Sync/System/hosts"
+source_file="$SOURCE_ROOT_PATH/System/hosts"
 target_file="/etc/hosts"
+
+echo "🧪 try: ln ${source_file} ${target_file}"
 
 function fun_overwrite_hosts() {
     if [ -e "${target_file}" ]; then
         echo -e "\t ⁉️ ${red}target exist, plz rename, backup it...${reset}"
     else
-        read -p "❓ input your username? " username
-
-        ln "/Users/$username/Dropbox/Sync/System/hosts" "${target_file}"
+        ln "${source_file}" "${target_file}"
         echo -e "\t ⭕️ ${green}link created!${reset}"
     fi
 }
