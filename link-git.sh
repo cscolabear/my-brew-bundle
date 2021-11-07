@@ -1,19 +1,17 @@
 #!/bin/bash
 
-
 red=`tput setaf 1`
 green=`tput setaf 2`
 reset=`tput sgr0`
 
+echo
 echo
 echo "${green}---------------------------${reset}"
 echo "${green}--- link-git ---${reset}"
 echo "${green}---------------------------${reset}"
 echo
 
-
-source_file="/Users/$USER/Dropbox/Sync/System/.gitconfig"
-target_file="/Users/$USER/.gitconfig"
+source ./.env
 
 function fun_link() {
     echo " - 🔍 is target exist? : \`${green}${target_file}${reset}\`"
@@ -34,17 +32,29 @@ function fun_link() {
     fi
 }
 
+
+source_file="$SOURCE_ROOT_PATH/System/.gitconfig"
+target_file="/Users/$USER/.gitconfig"
+
+echo "🧪 try: ln -s ${source_file} ${target_file}"
+
 fun_link $source_file $target_file
 echo
-echo "${green}use `git config --list` list your config...${reset}"
+echo "${green}use 'git config --list' list your config...${reset}"
+echo
 echo
 
 
-source_file="/Users/$USER/Dropbox/Sync/System/.gitignore_global"
+#
+source_file="$SOURCE_ROOT_PATH/System/.gitignore_global"
 target_file="/Users/$USER/.gitignore_global"
+
+
+echo "🧪 try: ln -s ${source_file} ${target_file}"
+
 fun_link $source_file $target_file
 echo
-echo "${green}use `git config --global core.excludesfile` your config...${reset}"
+echo "${green}use 'git config --global core.excludesfile' your config...${reset}"
 echo
 
 
@@ -52,4 +62,5 @@ echo
 echo "${green}-------------${reset}"
 echo "${green}--- Done. ---${reset}"
 echo "${green}-------------${reset}"
+echo
 echo
