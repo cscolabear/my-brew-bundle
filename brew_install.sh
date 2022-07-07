@@ -36,8 +36,11 @@ brew cleanup
 echo
 echo "${green}* check bash_profile...${reset}"
 echo
-target_file="/Users/$USER/.bash_profile"
 source_file="/Users/$USER/Dropbox/Sync/shell_script/.bash_profile"
+
+target_file="/Users/$USER/.bash_profile"
+# .zshenv
+
 
 echo " - is exist : $file"
 if [ -e "$file" ]; then
@@ -77,18 +80,6 @@ echo
 
 # symlink to subl
 # ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
-
-# Navicat connect list
-#ln -s ~/Documents/Navicat/preference.plist ~/Library/Application\ Support/PremiumSoft\ CyberTech
-
-# Sequel Pro
-#ln -s ~/Documents/Sequel\ Pro/Favorites.plist ~/Library/Application\ Support/Sequel\ Pro/Data
-#ln -s ~/Documents/Sequel\ Pro/com.sequelpro.SequelPro.plist ~/Library/Preferences
-
-# Transmit
-#ln -s ~/Documents/Transmit/Favorites ~/Library/Application\ Support/Transmit
-#ln -s ~/Documents/Transmit/Metadata ~/Library/Application\ Support/Transmit
-
 
 
 #

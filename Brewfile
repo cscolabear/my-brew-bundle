@@ -6,50 +6,46 @@ brew 'mas'
 
 # install packages
 cask_args appdir: '/Applications'
+tap 'caskroom/cask'
+tap 'caskroom/versions'
 
 
 
 # Casks
-cask 'alfred'
+#cask 'alfred'
 
-# cask 'google-chrome'
-# cask 'google-chrome-canary'
-cask 'brave-browser'
+cask 'google-chrome'
+cask 'google-chrome-canary'
 cask 'firefox'
-cask 'microsoft-edge'
+cask 'brave-browser'
 
-
-cask 'fork'
 cask 'iterm2'
-cask 'sequel-ace'
+# cask 'sequel-pro'
+# cask 'sourcetree'
+cask 'fork'
 cask 'visual-studio-code'
 cask 'sublime-text'
 cask 'postman'
 cask 'zeplin'
-# cask 'balsamiq-mockups'
+cask 'balsamiq-mockups'
 
-# cask 'docker'
-#cask 'kitematic'
+cask 'docker'
 
-# cask 'slack'
-# cask 'telegram-desktop'
 cask 'slack'
+cask 'telegram-desktop'
 
 cask 'safeincloud-password-manager'
-cask 'expressvpn'
 cask 'appcleaner'
 #cask 'the-unarchiver'
 cask 'keka'
-cask 'hiddenbar'
-#cask 'evernote'
 cask 'cloudapp'
 cask 'notion'
 
 cask 'spotify'
 cask 'spotifree'
 
-cask 'dropbox'
-
+# cask 'dropbox'
+cask 'hiddenbar'
 
 # mas, from apple store
 mas "LINE", id: 539883307

@@ -33,6 +33,9 @@ echo "ln ${source_file} ${target_file}"
 ln "${source_file}" "${target_file}"
 
 
+# ln -s ~/Dropbox/Sync/simpany/simpany/.vscode
+# ln -s ~/Dropbox/Sync/simpany/simpany-member2/.vscode..
+
 
 echo
 echo "${green}-------------${reset}"
