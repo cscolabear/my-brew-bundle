@@ -37,10 +37,32 @@ echo
 echo "${green}* check bash_profile...${reset}"
 echo
 source_file="/Users/$USER/Dropbox/Sync/shell_script/.bash_profile"
-
 target_file="/Users/$USER/.bash_profile"
-# .zshenv
 
+echo " - is exist : $file"
+if [ -e "$file" ]; then
+    echo "${green}files found.${reset}"
+else
+	ln -s "${source_file}" "${target_file}"
+fi
+echo
+
+
+
+source_file="/Users/$USER/Dropbox/Sync/shell_script/..zshenv"
+target_file="/Users/$USER/..zshenv"
+
+echo " - is exist : $file"
+if [ -e "$file" ]; then
+    echo "${green}files found.${reset}"
+else
+	ln -s "${source_file}" "${target_file}"
+fi
+echo
+
+
+source_file="/Users/$USER/Dropbox/Sync/shell_script/.zshrc"
+target_file="/Users/$USER/.zshrc"
 
 echo " - is exist : $file"
 if [ -e "$file" ]; then
@@ -58,8 +80,8 @@ echo
 echo
 echo "${green}* check motd...${reset}"
 echo
-target_file="/etc/motd"
 source_file="/Users/$USER/Dropbox/Sync/iTrem/motd"
+target_file="/etc/motd"
 
 echo " - is exist : $file"
 if [ -e "$file" ]; then
